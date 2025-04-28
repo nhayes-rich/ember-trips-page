@@ -6,6 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+string baseUri = builder.Configuration.GetValue<string>("Uri");
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri($"{baseUri}/") });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -16,10 +20,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseRouting();
+
+app.UseAntiforgery();
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
