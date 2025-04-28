@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-string baseUri = builder.Configuration.GetValue<string>("Uri");
+string? baseUri = builder.Configuration?.GetValue<string>("Uri");
 
+builder.Services.AddControllers();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri($"{baseUri}/") });
 
 var app = builder.Build();
@@ -23,6 +24,11 @@ if (!app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseAntiforgery();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 
 app.UseHttpsRedirection();
 

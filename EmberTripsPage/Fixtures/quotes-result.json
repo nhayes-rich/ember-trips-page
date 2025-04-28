@@ -1,0 +1,5245 @@
+﻿{
+  "quotes": [
+    {
+      "availability": {
+        "seat": 14,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "PXbZpwyFofmRTfTsxD5iNx",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1845398,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T01:40:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1845412,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T03:24:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T01:40:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T03:24:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG23 ORV",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 29,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "JCci8pjeMES6htvPDpHnfD",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847780,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T03:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847779,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T05:23:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T03:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T05:23:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HXW",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 33,
+        "wheelchair": 1,
+        "bicycle": 1
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "RDBvE6kkejQeu8zuEbXz6J",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847179,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T04:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847192,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T05:50:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T04:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T05:50:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG22 LTV",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 32,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "THitDL5uDodRtBj48CHDAZ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847219,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T04:28:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847218,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T06:18:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T04:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T06:18:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHP",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 26,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Q2gjvWSkj8tNKcJow686MX",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847278,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T05:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847291,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T06:58:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T05:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T06:58:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJS",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 28,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "3mgivwRNse4ZbNTMiJ6zaV",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847318,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T05:28:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847317,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T07:32:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T05:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T07:32:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHB",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 14,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Np7xc32A7bmXB9w5pnZi3C",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847822,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T06:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847835,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T08:06:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T06:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T08:06:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG72 NCC",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 38,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "22LxJzjYpLm3PktRtjKFRJ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847876,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T06:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847875,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T08:32:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T06:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T08:32:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HYO",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 34,
+        "wheelchair": 1,
+        "bicycle": 1
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "ihdNC3GB3fuAGAa6YRGSP6",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847904,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T07:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847917,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T09:02:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T07:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T09:02:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHY",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 32,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "4woca8twNra6xbkczDW8pM",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847345,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T07:28:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847344,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T09:28:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T07:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T09:28:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJN",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 20,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "fvDH7spXezECUk2DbRvcx2",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847959,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T08:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847972,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T10:01:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T08:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T10:01:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG22 LTX",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 17,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "55tHLzyDhoQJqyMzSYwjKU",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847372,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T08:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847371,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T10:28:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T08:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T10:28:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHU",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 23,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "q3YPp24uSPHCTTsCTYRDkJ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847373,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T09:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847386,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T11:01:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T09:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T11:01:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG22 LTU",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 41,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "uGevTireUyixHcVkeg5czY",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847413,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T09:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847412,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T11:28:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T09:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T11:28:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJC",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 29,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Cs2ECfUrfQH95qraGZ4awN",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847414,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T10:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847427,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T12:01:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T10:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T12:01:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG71 OTF",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 43,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Gz8pMp9eRrMPyzEtGdtWdb",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847454,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T10:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847453,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T12:27:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T10:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T12:27:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHL",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 44,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "nye9NB7eJfYMhS4UWLiYED",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847973,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T11:00:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847986,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T12:58:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T11:00:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T12:58:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJE",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 38,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Lou2GTPsJ5HJF3MzwmH7ab",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847481,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T11:27:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847480,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T13:26:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T11:30:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T13:26:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJJ",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 30,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "DMpAKJLPBSDADccJZ3BeYq",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847987,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T12:10:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848000,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T14:08:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T12:10:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T14:08:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJS",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 44,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "uetJLEbHrghSqqC8Drxowt",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847508,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T12:37:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847507,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T14:35:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T12:40:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T14:35:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHF",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 30,
+        "wheelchair": 1,
+        "bicycle": 0
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "sNJrRzhx5GbzdZ3BrheiFZ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848001,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T13:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848014,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T15:04:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T13:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T15:04:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG72 NCF",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 47,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "VKSk68g53X2HRQ34ATgb2V",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847535,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T13:37:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847534,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T15:37:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T13:40:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T15:37:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJW",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 36,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "9YAMW6ES3bjqFBFhnYX8WQ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848015,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T14:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848028,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T16:06:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T14:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T16:06:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG72 NCC",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 48,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "FJRnR6uPWCt95Vh6Acrvqs",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847562,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T14:31:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847561,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T16:34:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T14:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T16:34:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHP",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 34,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "uUATmZka8uspjNoyRoNHFq",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848029,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T15:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848042,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T17:07:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T15:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T17:07:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG71 OTA",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 45,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "kEs5KSJL9ypKP6SySUGTmW",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847589,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T15:31:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847588,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T17:30:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T15:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T17:30:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHB",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 31,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "SU8DS6kpKiVrHvwif2dfwQ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848043,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T16:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848056,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T18:02:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T16:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T18:02:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG23 ORO",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 42,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "K3E8WpAUbpmBzJ4qXcrJyv",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847616,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T16:31:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847615,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T18:25:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T16:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T18:25:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HXW",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 49,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "GVK65cLmGcxKcM86r6AP3k",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848057,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T17:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848070,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T18:55:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T17:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T18:55:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HZF",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 52,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "9Fz8x6S352wAqGHPfHYdvx",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847643,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T17:33:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847642,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T19:23:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T17:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T19:23:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJN",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 38,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "MwmPQ4XmWRbXnuW7WVyL6o",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848071,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T18:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848084,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T19:53:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T18:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T19:53:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJS",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 51,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "kLqBhzoDfYnRPctf3GJ6hY",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847670,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T18:33:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847669,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T20:20:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T18:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T20:20:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHU",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 37,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "J83NKrRRcqAaGtn475Szgn",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848126,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T19:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848139,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T20:47:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T19:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T20:47:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG23 ORV",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 53,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "ZDrvR4o3eeA6Lf8QwjVVyB",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847697,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T19:33:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847696,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T21:13:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T19:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T21:13:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJC",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 38,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "bcLbmK6Kbfn77vPRW4JEhS",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848181,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T20:05:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848194,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T21:43:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T20:05:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T21:43:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG22 LTX",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 53,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "mvBbKyYLCdgcnHd3difmYN",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848235,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T20:34:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848234,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T22:12:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T20:35:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T22:12:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HYO",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 53,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "oYE6qAFekY2kT2cGX685pJ",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848263,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T21:10:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848276,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T22:48:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T21:10:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T22:48:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJK",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 53,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "jirFFLTRzLt8qzuunyj4Cg",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847724,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T21:44:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847723,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T23:21:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T21:45:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-28T23:21:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UHL",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 38,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "E7qMvvsyc5pGFrsfqbMMiz",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1848320,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T22:55:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1848334,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-29T00:39:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T22:55:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-29T00:39:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG25 HYV",
+            "vehicle_type": "coach",
+            "colour": "black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    },
+    {
+      "availability": {
+        "seat": 50,
+        "wheelchair": 1,
+        "bicycle": 2
+      },
+      "prices": {
+        "adult": 920,
+        "child": 460,
+        "young_child": 0,
+        "concession": 0,
+        "seat": 0,
+        "wheelchair": 0,
+        "bicycle": 0
+      },
+      "legs": [
+        {
+          "type": "scheduled_transit",
+          "trip_uid": "Zb7RUAQgkRTcvRLLjyAa3v",
+          "adds_capacity_for_trip_uid": null,
+          "origin": {
+            "id": 218,
+            "atco_code": "6400LL99",
+            "detailed_name": "Slessor Gardens",
+            "lat": 56.459319,
+            "lon": -2.966036,
+            "name": "Dundee Slessor Gardens",
+            "region_name": "Dundee",
+            "type": "STOP_POINT",
+            "code": "DUND",
+            "code_detail": "Dundee",
+            "timezone": "Europe/London",
+            "heading": 135,
+            "zone": [
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              },
+              {
+                "longitude": -2.96554414986868,
+                "latitude": 56.459116641801984
+              },
+              {
+                "longitude": -2.965733748522858,
+                "latitude": 56.45900595021118
+              },
+              {
+                "longitude": -2.966491901718304,
+                "latitude": 56.45942485291969
+              },
+              {
+                "longitude": -2.966276800467473,
+                "latitude": 56.459542218608334
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 13,
+            "location_time_id": 1847752,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-28T23:43:00+00:00"
+          },
+          "destination": {
+            "id": 175,
+            "atco_code": "6200206490",
+            "detailed_name": "George Street (Stop GL)",
+            "google_place_id": "ChIJ1QuappHHh0gRScSpuwtgb-s",
+            "lat": 55.95395,
+            "lon": -3.19549,
+            "name": "George Street (Stop GL)",
+            "region_name": "Edinburgh",
+            "type": "STOP_POINT",
+            "code": "EDIN",
+            "code_detail": "Edinburgh",
+            "timezone": "Europe/London",
+            "heading": 75,
+            "zone": [
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              },
+              {
+                "longitude": -3.195819771310044,
+                "latitude": 55.95377939447384
+              },
+              {
+                "longitude": -3.195124451156351,
+                "latitude": 55.95389942984702
+              },
+              {
+                "longitude": -3.195210121329188,
+                "latitude": 55.95405031477016
+              },
+              {
+                "longitude": -3.19590088477814,
+                "latitude": 55.95393198830283
+              }
+            ],
+            "has_future_activity": true,
+            "area_id": 42,
+            "location_time_id": 1847751,
+            "booking_cut_off_mins": 0,
+            "pre_booked_only": false,
+            "skipped": false,
+            "bookable": "2025-04-29T01:27:00+00:00"
+          },
+          "departure": {
+            "scheduled": "2025-04-28T23:45:00+00:00"
+          },
+          "arrival": {
+            "scheduled": "2025-04-29T01:27:00+00:00"
+          },
+          "description": {
+            "brand": "Ember",
+            "operator": "Ember",
+            "destination_board": "E1",
+            "number_plate": "SG24 UJJ",
+            "vehicle_type": "coach",
+            "colour": "Black",
+            "amenities": {
+              "has_wifi": true,
+              "has_toilet": true
+            },
+            "is_electric": true
+          },
+          "trip_type": "public"
+        }
+      ],
+      "bookable": true
+    }
+  ],
+  "min_card_transaction": 30
+}
