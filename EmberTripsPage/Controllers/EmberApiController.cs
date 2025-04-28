@@ -16,8 +16,8 @@ namespace EmberTripsPage.Controllers
             return new OkObjectResult(jsonData);
         }
 
-        [HttpGet("trips")]
-        public ActionResult Trips([FromQuery] string tripUid)
+        [HttpGet("trips/{tripUid}")]
+        public ActionResult Trips(string tripUid)
         {
             var fp = Path.Combine(Directory.GetCurrentDirectory(), "Fixtures", "trips-result.json");
             var jsonData = System.IO.File.ReadAllText(fp);
