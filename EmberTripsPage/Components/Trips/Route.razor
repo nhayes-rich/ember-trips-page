@@ -4,7 +4,11 @@
 @if (Trip != null && Trip.Stops != null)
 {
     <div class="trip-overview-container">
-        
+        @if (!CollapseIntermediate)
+        {
+            <button @onclick="ToggleCollapsed" class="toggle-button toggle-button-collapsed">@ToggleButtonCaption</button>
+        }
+
         <ul class="trip-stops">
             @{
                 bool collapsedIntermediate = false;
@@ -73,7 +77,7 @@ else
 
     public bool CollapseIntermediate = true;
 
-    public string ToggleButtonCaption => CollapseIntermediate ? "Show intermediate stops" : "Hide intermediate stops";
+    public string ToggleButtonCaption => CollapseIntermediate ? "Show intermediate stops" : "(hide)";
 
     public void ToggleCollapsed()
     {

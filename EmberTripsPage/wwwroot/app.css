@@ -318,6 +318,10 @@ html, body {
     }
 }
 
+.toggle-button-collapsed {
+    float: right;
+}
+
 .toggle-button {
     background-color: #ffffff;
     color: var(--color-text-secondary);
