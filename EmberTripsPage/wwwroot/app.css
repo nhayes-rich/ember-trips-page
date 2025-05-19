@@ -261,6 +261,53 @@ html, body {
     min-height: 1em;
 }
 
+.overview-component.loading .route-from,
+.overview-component.loading .route-to,
+.overview-component.loading .route-region,
+.overview-component.loading .route-name {
+    color: transparent !important; 
+    background-color: var(--skeleton-bg); 
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden; 
+    user-select: none;
+    cursor: progress;
+    min-height: 1.2em;
+}
+
+.overview-component.loading .route-from::after,
+.overview-component.loading .route-to::after,
+.overview-component.loading .route-region::after,
+.overview-component.loading .route-name::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( to right, var(--skeleton-bg) 0%, var(--skeleton-shine) 30%, var(--skeleton-bg) 60%, var(--skeleton-bg) 100% );
+    background-repeat: no-repeat;
+    background-size: 250% 100%;
+    animation: shimmer 1.8s linear infinite;
+    display: block;
+}
+
+.overview-component.loading .route-from,
+.overview-component.loading .route-to {
+    width: 60%;
+    min-height: 0.75rem;
+}
+
+.overview-component.loading .route-region {
+    width: 70%;
+    min-height: 1.5rem;
+}
+
+.overview-component.loading .route-name {
+    width: 90%;
+    min-height: 0.75rem;
+}
+
 @keyframes shimmer {
     0% {
         background-position: 100% 0;
