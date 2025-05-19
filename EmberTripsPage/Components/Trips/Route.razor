@@ -1,0 +1,82 @@
+﻿@using EmberTripsPage.Models
+@using EmberTripsPage.Models.Json
+
+@if (Trip != null && Trip.Stops != null)
+{
+    <div class="trip-overview-container">
+        
+        <ul class="trip-stops">
+            @{
+                bool collapsedIntermediate = false;
+
+                foreach (var stop in Trip.Stops)
+                {
+                    StopType stopType = StopType.INTERMEDIATE;
+                    if (stop.Equals(Trip.Stops.First()))
+                    {
+                        stopType = StopType.START;
+                        collapsedIntermediate = false;
+                    }
+                    else if (stop.Equals(Trip.Stops.Last()))
+                    {
+                        stopType = StopType.END;
+                    }
+                    else if (stop.Equals(Trip.GetCurrentStop()))
+                    {
+                        stopType = StopType.ACTIVE;
+                        collapsedIntermediate = false;
+                    }
+                    else if (CollapseIntermediate)
+                    {
+                        if (!collapsedIntermediate)
+                        {
+                            <li class="stop-item @stopType.ToString().ToLower()">
+                                <div class="marker-assembly">
+                                    <div class="marker-icon"></div>
+                                    <div class="marker-stem"></div>
+                                </div>
+                                <div class="stop-details">
+                                    <span class="stop-name"><button @onclick="ToggleCollapsed" class="toggle-button">@ToggleButtonCaption</button></span>
+                                    <span class="stop-eta"></span>
+                                </div>
+                            </li>
+
+                            collapsedIntermediate = true;
+                        }
+
+                        continue;
+                    }
+
+                    <li class="stop-item @stopType.ToString().ToLower()">
+                        <div class="marker-assembly">
+                            <div class="marker-icon"></div>
+                            <div class="marker-stem"></div>
+                        </div>
+                        <div class="stop-details">
+                            <span class="stop-name">@stop.Location.Name</span>
+                            <span class="stop-eta">@stop.GetFormattedDepartureEta()</span>
+                        </div>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+}
+else
+{
+    <SkeletonRoute></SkeletonRoute>
+}
+
+@code {
+    [Parameter]
+    public TripResult? Trip { get; set; }
+
+    public bool CollapseIntermediate = true;
+
+    public string ToggleButtonCaption => CollapseIntermediate ? "Show intermediate stops" : "Hide intermediate stops";
+
+    public void ToggleCollapsed()
+    {
+        CollapseIntermediate = !CollapseIntermediate;
+    }
+}

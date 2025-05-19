@@ -17,16 +17,16 @@ namespace EmberTripsPage.Models.Json
     public class Location
     {
         [JsonProperty("type")]
-        public string? Type { get; set; }
+        public string Type { get; set; } = string.Empty;
 
         [JsonProperty("name")]
-        public string? Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [JsonProperty("region_name")]
-        public string? RegionName { get; set; }
+        public string RegionName { get; set; } = string.Empty;
 
         [JsonProperty("detailed_name")]
-        public string? DetailedName { get; set; }
+        public string DetailedName { get; set; } = string.Empty;
 
         [JsonProperty("lon")]
         public double Longitude { get; set; }
@@ -35,7 +35,7 @@ namespace EmberTripsPage.Models.Json
         public double Latitude { get; set; }
 
         [JsonProperty("google_place_id")]
-        public string? GooglePlaceId { get; set; }
+        public string GooglePlaceId { get; set; } = string.Empty;
     }
 
     public class RouteStop
@@ -44,13 +44,13 @@ namespace EmberTripsPage.Models.Json
         public int Id { get; set; }
 
         [JsonProperty("departure")]
-        public ScheduledTime? Departure { get; set; }
+        public ScheduledTime Departure { get; set; } = new();
 
         [JsonProperty("arrival")]
-        public ScheduledTime? Arrival { get; set; }
+        public ScheduledTime Arrival { get; set; } = new();         
 
         [JsonProperty("location")]
-        public Location? Location { get; set; }
+        public Location Location { get; set; } = new();
 
         [JsonProperty("allow_boarding")]
         public bool AllowBoarding { get; set; }
@@ -60,6 +60,16 @@ namespace EmberTripsPage.Models.Json
 
         [JsonProperty("skipped")]
         public bool Skipped { get; set; }
+
+        public string GetFormattedArrivalEta()
+        {
+            return Arrival.Scheduled.ToString("HH:mm");
+        }
+
+        public string GetFormattedDepartureEta()
+        {
+            return Departure.Scheduled.ToString("HH:mm");
+        }
     }
 
     public class Gps
@@ -89,7 +99,7 @@ namespace EmberTripsPage.Models.Json
         public int Seat { get; set; }
 
         [JsonProperty("name")]
-        public string? Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [JsonProperty("has_wifi")]
         public bool HasWifi { get; set; }
@@ -98,31 +108,31 @@ namespace EmberTripsPage.Models.Json
         public bool HasToilet { get; set; }
 
         [JsonProperty("type")]
-        public string? Type { get; set; }
+        public string Type { get; set; } = string.Empty;
 
         [JsonProperty("brand")]
-        public string? Brand { get; set; }
+        public string Brand { get; set; } = string.Empty;
 
         [JsonProperty("colour")]
-        public string? Colour { get; set; }
+        public string Colour { get; set; } = string.Empty;
 
         [JsonProperty("gps")]
-        public Gps? Gps { get; set; }
+        public Gps Gps { get; set; } = new();
     }
 
     public class Description
     {
         [JsonProperty("route_number")]
-        public string? RouteNumber { get; set; }
+        public string RouteNumber { get; set; } = string.Empty;
 
         [JsonProperty("pattern_id")]
         public int PatternId { get; set; }
 
         [JsonProperty("calendar_date")]
-        public string? CalendarDate { get; set; }
+        public string CalendarDate { get; set; } = string.Empty;
 
         [JsonProperty("type")]
-        public string? Type { get; set; }
+        public string Type { get; set; } = string.Empty;
 
         [JsonProperty("is_cancelled")]
         public bool IsCancelled { get; set; }
@@ -131,12 +141,78 @@ namespace EmberTripsPage.Models.Json
     public class TripResult
     {
         [JsonProperty("route")]
-        public List<RouteStop>? Stops { get; set; }
+        public List<RouteStop> Stops { get; set; } = new();
 
         [JsonProperty("vehicle")]
-        public Vehicle? Vehicle { get; set; }
+        public Vehicle Vehicle { get; set; } = new();
 
         [JsonProperty("description")]
-        public Description? Description { get; set; }
+        public Description Description { get; set; } = new();
+
+        public string GetRouteNumber()
+        {
+            return Description.RouteNumber;
+        }
+
+        public string GetFormattedRouteName()
+        {
+            var firstName = GetOrigin().Location.Name;
+            var firstRegion = GetOrigin().Location.RegionName;
+
+            var lastName = GetDestination().Location.Name;
+            var lastRegion = GetDestination().Location.RegionName;
+
+            return $"{firstName} [{firstRegion}] to {lastName} [{lastRegion}]";
+        }
+
+        public RouteStop GetOrigin()
+        {
+            return Stops.First();
+        }
+
+        public int GetCurrentStopIndex()
+        {
+            return Stops.Count / 3;
+        }
+
+        public RouteStop GetCurrentStop()
+        {
+            return Stops[GetCurrentStopIndex()];
+        }
+
+        public RouteStop GetDestination()
+        {
+            return Stops.Last();
+        }
+
+        public string GetOriginName()
+        {
+            return GetOrigin().Location.Name;
+        }
+
+        public string GetOriginRegion()
+        {
+            return GetOrigin().Location.RegionName;
+        }
+
+        public string GetScheduledStart()
+        {
+            return GetOrigin().Departure.Scheduled.ToString("HH:mm");
+        }
+
+        public string GetScheduledEnd()
+        {
+            return GetDestination().Arrival.Scheduled.ToString("HH:mm");
+        }
+
+        public string GetDestinationName()
+        {
+            return GetDestination().Location.Name;
+        }
+
+        public string GetDestinationRegion()
+        {
+            return GetDestination().Location.RegionName;
+        }
     }
 }

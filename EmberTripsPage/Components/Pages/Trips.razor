@@ -2,10 +2,94 @@
 @inject HttpClient Http
 @rendermode InteractiveServer
 
-<PageTitle>Slots</PageTitle>
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.Extensions.Primitives
 
-<Header></Header>
+@using Newtonsoft.Json
+
+@using EmberTripsPage.Components.Trips
+@using EmberTripsPage.Config
+@using EmberTripsPage.Models
+@using EmberTripsPage.Models.Json
+
+<PageTitle>Ember - Trip Viewer</PageTitle>
+
+<div class="trips-component">
+    <Overview Trip=@trip></Overview>
+    <Route Trip=@trip></Route>
+</div>
 
 @code {
-    
+    private TripResult? trip;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var tripResult = await GetFirstRouteAsync();
+            if (tripResult != null)
+            {
+                trip = tripResult;
+                StateHasChanged();
+            }
+        }
+    }
+
+    private async Task<string> GetUsableTripUidAsync(int origin, int destination, DateTime departureFrom, DateTime departureTo)
+    {
+        Dictionary<string, string?> queryParams = new()
+        {
+            {"origin", origin.ToString() },
+            {"destination", destination.ToString() },
+            {"departure_date_from", departureFrom.ToString("O") },
+            {"departure_date_to", departureTo.ToString("O") },
+        };
+
+        var fullUri = QueryHelpers.AddQueryString(Constants.QuotesApiRoute, queryParams);
+
+        try
+        {
+            var response = await Http.GetAsync(fullUri);
+            response.EnsureSuccessStatusCode();
+
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            var quotes = JsonConvert.DeserializeObject<QuotesResult>(responseBody);
+            return quotes?.Quotes?.FirstOrDefault()?.Legs?.FirstOrDefault()?.TripUid ?? string.Empty;
+        }
+        catch (Exception e)
+        {
+            return string.Empty;
+        }
+    }
+
+    private async Task<TripResult?> GetFirstRouteAsync()
+    {
+        var departureFrom = DateTime.UtcNow;
+        var departureTo = departureFrom.AddHours(24);
+
+        var tripUid = await GetUsableTripUidAsync(Constants.DefaultOrigin, Constants.DefaultDestination, departureFrom, departureTo);
+
+        if (tripUid == string.Empty)
+        {
+            return null;
+        }
+
+        var fullUri = Constants.TripsApiRoute + tripUid;
+
+        try
+        {
+            var response = await Http.GetAsync(fullUri);
+            response.EnsureSuccessStatusCode();
+
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            var tripResult = JsonConvert.DeserializeObject<TripResult>(responseBody);
+            return tripResult;
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
+    }
 }
