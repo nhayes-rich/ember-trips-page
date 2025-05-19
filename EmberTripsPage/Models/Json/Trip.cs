@@ -61,14 +61,18 @@ namespace EmberTripsPage.Models.Json
         [JsonProperty("skipped")]
         public bool Skipped { get; set; }
 
-        public string GetFormattedArrivalEta()
+        public string GetFormattedDepartureEta(DateTime routeStartTime)
         {
-            return Arrival.Scheduled.ToString("HH:mm");
-        }
+            int daysAfter = (int)Math.Floor((Departure.Scheduled.Date - routeStartTime.Date).TotalDays);
 
-        public string GetFormattedDepartureEta()
-        {
-            return Departure.Scheduled.ToString("HH:mm");
+            string formattedTime = Departure.Scheduled.ToString("HH:mm");
+
+            if (daysAfter > 0)
+            {
+                return formattedTime + $"+{daysAfter}";
+            }
+
+            return formattedTime;
         }
     }
 
@@ -195,14 +199,24 @@ namespace EmberTripsPage.Models.Json
             return GetOrigin().Location.RegionName;
         }
 
-        public string GetScheduledStart()
+        public DateTime GetStartTime()
         {
-            return GetOrigin().Departure.Scheduled.ToString("HH:mm");
+            return GetOrigin().Departure.Scheduled;
         }
 
-        public string GetScheduledEnd()
+        public DateTime GetEndTime()
         {
-            return GetDestination().Arrival.Scheduled.ToString("HH:mm");
+            return GetDestination().Departure.Scheduled;
+        }
+
+        public string GetFormattedStart()
+        {
+            return GetStartTime().ToString("HH:mm");
+        }
+
+        public string GetFormattedEnd()
+        {
+            return GetDestination().GetFormattedDepartureEta(GetStartTime());
         }
 
         public string GetDestinationName()

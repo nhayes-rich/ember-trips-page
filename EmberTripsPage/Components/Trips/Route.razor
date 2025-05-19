@@ -54,7 +54,7 @@
                         </div>
                         <div class="stop-details">
                             <span class="stop-name">@stop.Location.Name</span>
-                            <span class="stop-eta">@stop.GetFormattedDepartureEta()</span>
+                            <span class="stop-eta">@stop.GetFormattedDepartureEta(Trip.GetStartTime())</span>
                         </div>
                     </li>
                 }
