@@ -1,9 +1,10 @@
-﻿@using EmberTripsPage.Models
+﻿@using EmberTripsPage.Components.Trips.Skeletons
+@using EmberTripsPage.Models
 @using EmberTripsPage.Models.Json
 
 @if (Trip != null && Trip.Stops != null)
 {
-    <div class="route-component">
+    <div class="panel route-component">
         @if (!CollapseIntermediate)
         {
             <button @onclick="ToggleCollapsed" class="toggle-button toggle-button-collapsed">@ToggleButtonCaption</button>

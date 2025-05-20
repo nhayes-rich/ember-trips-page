@@ -7,7 +7,7 @@
 
 @using Newtonsoft.Json
 
-@using EmberTripsPage.Components.Trips
+@using EmberTripsPage.Components.Trips.Components
 @using EmberTripsPage.Config
 @using EmberTripsPage.Models
 @using EmberTripsPage.Models.Json
@@ -15,8 +15,10 @@
 <PageTitle>Ember - Trip Viewer</PageTitle>
 
 <div class="trips-component">
-    <Overview Trip=@trip></Overview>
     <Route Trip=@trip></Route>
+    <Overview Trip=@trip></Overview>
+    <Details Trip="@trip"></Details>
+    <Map Trip="@trip"></Map>
 </div>
 
 @code {

@@ -1,0 +1,17 @@
+﻿@using EmberTripsPage.Components.Trips.Skeletons
+@using EmberTripsPage.Models.Json
+
+@if (Trip != null)
+{
+    <div class="panel map-component">
+    </div>
+}
+else
+{
+    <SkeletonMap></SkeletonMap>
+}
+
+@code {
+    [Parameter]
+    public TripResult? Trip { get; set; }
+}

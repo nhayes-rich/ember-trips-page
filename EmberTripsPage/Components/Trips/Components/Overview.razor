@@ -1,10 +1,9 @@
-﻿@using BootstrapBlazor.Components
-
+﻿@using EmberTripsPage.Components.Trips.Skeletons
 @using EmberTripsPage.Models.Json
 
 @if (Trip != null)
 {
-    <div class="overview-component">
+    <div class="panel overview-component">
         <div class="route-overview">
             <div class="route-start">
                 <div class="route-from">@Trip.GetFormattedStart() from</div>
