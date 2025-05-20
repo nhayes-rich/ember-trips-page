@@ -111,7 +111,7 @@ html, body {
 
 /* Route component */
 
-.trip-overview-container {
+.route-component {
     float: left;
     margin-left: var(--component-margin-sides);
     margin-top: var(--component-margin-top);
@@ -235,8 +235,8 @@ html, body {
 
 /* Skeleton components */
 
-.trip-overview-container.loading .stop-name,
-.trip-overview-container.loading .stop-eta {
+.route-component.loading .stop-name,
+.route-component.loading .stop-eta {
     color: transparent !important;
     background-color: var(--skeleton-bg);
     border-radius: 4px;
@@ -246,8 +246,8 @@ html, body {
     cursor: progress;
 }
 
-.trip-overview-container.loading .stop-name::after,
-.trip-overview-container.loading .stop-eta::after {
+.route-component.loading .stop-name::after,
+.route-component.loading .stop-eta::after {
     content: '';
     position: absolute;
     top: 0;
@@ -261,13 +261,13 @@ html, body {
     display: block;
 }
 
-.trip-overview-container.loading .stop-name {
+.route-component.loading .stop-name {
     width: 125%;
     min-height: 1.1em;
     margin-bottom: 4px;
 }
 
-.trip-overview-container.loading .stop-eta {
+.route-component.loading .stop-eta {
     width: 25%;
     min-height: 1em;
 }

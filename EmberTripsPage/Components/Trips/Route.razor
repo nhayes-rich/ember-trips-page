@@ -3,7 +3,7 @@
 
 @if (Trip != null && Trip.Stops != null)
 {
-    <div class="trip-overview-container">
+    <div class="route-component">
         @if (!CollapseIntermediate)
         {
             <button @onclick="ToggleCollapsed" class="toggle-button toggle-button-collapsed">@ToggleButtonCaption</button>
