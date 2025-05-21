@@ -8,6 +8,8 @@ The shareable page contains three main components: a route overview (including t
 
 Two project configurations were created: a `Development` configuration, which populates the view from a self-hosted controller with fixtures that mock query results, and a `Production` configuration, which pulls results from the Ember API route.
 
+![image](page.png)
+
 ## Component Tests
 
 ## Future Goals
@@ -48,6 +50,12 @@ With individual view-models for each component, each component could be populate
 
 Results that are shared across multiple components, (such as route stops, with the scheduled, estimated, and actual arrival/departure times, which are currently shared by the route breakdown and the map), could be polled at higher levels and populated into components to trigger re-renders of selected sections of the components.
 
-### Media-specific views
+#### Streamline API queries
+
+Currently, I leverage the `quotes` and `trips` APIs as monoliths to retrieve all of the required data at once. With better view/view-model/model separation, it would likely be more efficient and robust to retrieve selected results individually. This would help avoid repopulating large sets of results at once (and, as a result, re-render only the components that need to be re-render), but also reduce the risk of queries that take too long or have dropped packets and return corrupted results.
+
+### Media-specific views and better overall styling
 
 As of now, I currently only have CSS logic to support a desktop view. Additional views could be easily added via `@media` queries in the CSS to support different grid layouts (perhaps overview, map, followed by the route-overview).
+
+Additionally, I've gone fairly minimal with the styling, but in a production project I would want to make sure the page is consistent with other Ember pages, includes relevant headers, navigation menus, and footers.
