@@ -2,13 +2,13 @@
 
 var map;
 var markers = [];
-var polyline;
 var dotNetReference; // To call C# methods from JS
 
 export function initializeMap(mapId, initialLat, initialLng, initialZoom, dotNetHelper) {
     dotNetReference = dotNetHelper; // Store the .NET reference
 
     map = L.map(mapId).setView([initialLat, initialLng], initialZoom);
+    markers = [];
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -34,6 +34,24 @@ export function addMarker(lat, lng, popupText, stopClass) {
     }
 
     markers.push(marker);
+}
+
+export function addRoute() {
+    const router = L.Routing.osrmv1();
+
+    var latLngs = markers.map(m => new L.Routing.Waypoint(m.getLatLng()));
+
+    console.log(latLngs);
+
+    router.route(
+        latLngs,
+        function (err, routes) {
+            if (!err && routes.length > 0) {
+                const line = L.Routing.line(routes[0], {
+                    styles: [{ color: 'darkslategray', weight: 3 }]
+                }).addTo(map);
+            }
+        });
 }
 
 export function clearWaypointsAndRoute() {

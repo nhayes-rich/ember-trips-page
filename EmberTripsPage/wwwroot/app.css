@@ -2,8 +2,8 @@
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --page-background-color: lightgray;
     /* Marker Sizes */
-    --marker-icon-size-tiny: 8px;
-    --marker-icon-size-small: 14px;
+    --marker-icon-size-tiny: 9px; 
+    --marker-icon-size-small: 14px; 
     --marker-icon-size-large: 20px;
     --marker-border-width-tiny: 1px;
     --marker-border-width: 2px;
@@ -278,7 +278,7 @@ html, body {
 
 .map-marker-icon::before {
     content: '';
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

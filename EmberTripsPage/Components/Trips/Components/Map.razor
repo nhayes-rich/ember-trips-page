@@ -29,9 +29,6 @@
                 dotNetObjectReference = DotNetObjectReference.Create(this);
 
                 await module.InvokeVoidAsync("initializeMap", MapId, initialLatitude, initialLongitude, initialZoom, dotNetObjectReference);
-
-                await DrawCurrentRoute();
-                StateHasChanged();
             }
             catch (JSException ex)
             {
@@ -60,6 +57,8 @@
                 await AddWaypointToMap(lat, lng, popupText, stopType.ToString().ToLower());
             }
 
+            await AddRoute();
+
             var minLat = Trip.Stops.Select(x => x.Location.Latitude).Min();
             var maxLat = Trip.Stops.Select(x => x.Location.Latitude).Max();
             var minLong = Trip.Stops.Select(x => x.Location.Longitude).Min();
@@ -76,6 +75,21 @@
             try
             {
                 await module.InvokeVoidAsync("addMarker", lat, lng, popupText, stopClass);
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error adding marker: {ex.Message}");
+            }
+        }
+    }
+
+    private async Task AddRoute()
+    {
+        if (module is not null)
+        {
+            try
+            {
+                await module.InvokeVoidAsync("addRoute");
             }
             catch (JSException ex)
             {
