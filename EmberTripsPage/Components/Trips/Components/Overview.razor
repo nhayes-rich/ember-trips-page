@@ -6,12 +6,12 @@
     <div class="panel overview-component">
         <div class="route-overview">
             <div class="route-start">
-                <div class="route-from">@Trip.GetFormattedStart() from</div>
+                <div class="route-from">@Trip.GetFormattedStartLocal() from</div>
                 <div class="route-region">@Trip.GetOriginRegion()</div>
                 <div class="route-name">@Trip.GetOriginName()</div>
             </div>
             <div class="route-end">
-                <div class="route-to">@Trip.GetFormattedEnd() to</div>
+                <div class="route-to">@Trip.GetFormattedEndLocal() to</div>
                 <div class="route-region">@Trip.GetDestinationRegion()</div>
                 <div class="route-name">@Trip.GetDestinationName()</div>
             </div>

@@ -62,15 +62,18 @@ namespace EmberTripsPage.Models.Json
         [JsonProperty("skipped")]
         public bool Skipped { get; set; }
 
-        public string GetFormattedDepartureEta(DateTime routeStartTime)
+        public string GetFormattedDepartureEta(DateTime? routeStartTimeUtc = null)
         {
-            int daysAfter = (int)Math.Floor((Departure.Scheduled.Date - routeStartTime.Date).TotalDays);
+            string formattedTime = Departure.Scheduled.ToLocalTime().ToString("HH:mm");
 
-            string formattedTime = Departure.Scheduled.ToString("HH:mm");
-
-            if (daysAfter > 0)
+            if (routeStartTimeUtc != null)
             {
-                return formattedTime + $"+{daysAfter}";
+                int daysAfter = (int)Math.Floor((Departure.Scheduled.ToUniversalTime().Date - routeStartTimeUtc.Value.Date).TotalDays);
+                
+                if (daysAfter > 0)
+                {
+                    formattedTime += $"+{daysAfter}";
+                }
             }
 
             return formattedTime;
@@ -200,24 +203,24 @@ namespace EmberTripsPage.Models.Json
             return GetOrigin().Location.RegionName;
         }
 
-        public DateTime GetStartTime()
+        public DateTime GetStartTimeUTC()
         {
-            return GetOrigin().Departure.Scheduled;
+            return GetOrigin().Departure.Scheduled.ToUniversalTime();
         }
 
-        public DateTime GetEndTime()
+        public DateTime GetEndTimeUTC()
         {
-            return GetDestination().Departure.Scheduled;
+            return GetDestination().Departure.Scheduled.ToUniversalTime();
         }
 
-        public string GetFormattedStart()
+        public string GetFormattedStartLocal()
         {
-            return GetStartTime().ToString("HH:mm");
+            return GetOrigin().GetFormattedDepartureEta();
         }
 
-        public string GetFormattedEnd()
+        public string GetFormattedEndLocal()
         {
-            return GetDestination().GetFormattedDepartureEta(GetStartTime());
+            return GetDestination().GetFormattedDepartureEta(GetStartTimeUTC());
         }
 
         public string GetDestinationName()

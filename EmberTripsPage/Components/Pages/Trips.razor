@@ -67,10 +67,10 @@
 
     private async Task<TripResult?> GetFirstRouteAsync()
     {
-        var departureFrom = DateTime.UtcNow;
-        var departureTo = departureFrom.AddHours(24);
+        var departureFromUtc = DateTime.UtcNow;
+        var departureToUtc = departureFromUtc.AddHours(24);
 
-        var tripUid = await GetUsableTripUidAsync(Constants.DefaultOrigin, Constants.DefaultDestination, departureFrom, departureTo);
+        var tripUid = await GetUsableTripUidAsync(Constants.DefaultOrigin, Constants.DefaultDestination, departureFromUtc, departureToUtc);
 
         if (tripUid == string.Empty)
         {
