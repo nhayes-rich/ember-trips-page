@@ -1,17 +1,124 @@
-﻿@using EmberTripsPage.Components.Trips.Skeletons
-@using EmberTripsPage.Models.Json
+﻿@using EmberTripsPage.Models.Json
+@inject IJSRuntime JSRuntime
+@implements IAsyncDisposable
 
-@if (Trip != null)
-{
-    <div class="panel map-component">
-    </div>
-}
-else
-{
-    <SkeletonMap></SkeletonMap>
-}
+<div class="panel map-component" id="@MapId">
+</div>
 
 @code {
     [Parameter]
     public TripResult? Trip { get; set; }
+
+    private IJSObjectReference? module;
+    private DotNetObjectReference<Map>? dotNetObjectReference;
+
+    private const string MapId = "map-container";
+
+    // Default map center (Edinburgh)
+    private double initialLatitude = 55.9533;
+    private double initialLongitude = -3.1883;
+    private int initialZoom = 10;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./js/mapInterop.js");
+                dotNetObjectReference = DotNetObjectReference.Create(this);
+
+                await module.InvokeVoidAsync("initializeMap", MapId, initialLatitude, initialLongitude, initialZoom, dotNetObjectReference);
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error initializing map: {ex.Message}");
+            }
+        }
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await DrawCurrentRoute();
+        StateHasChanged();
+    }
+
+    private async Task AddWaypointToMap(double lat, double lng, string popupText)
+    {
+        if (module is not null)
+        {
+            try
+            {
+                await module.InvokeVoidAsync("addMarker", lat, lng, popupText);
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error adding marker: {ex.Message}");
+            }
+        }
+    }
+
+    private async Task DrawCurrentRoute()
+    {
+        if (Trip != null && Trip.Stops != null)
+        {
+            foreach (var stop in Trip.Stops)
+            {
+                var lat = stop.Location.Latitude;
+                var lng = stop.Location.Longitude;
+                var popupText = stop.Location.Name;
+
+                await AddWaypointToMap(lat, lng, popupText);
+            }
+
+            var minLat = Trip.Stops.Select(x => x.Location.Latitude).Min();
+            var maxLat = Trip.Stops.Select(x => x.Location.Latitude).Max();
+            var minLong = Trip.Stops.Select(x => x.Location.Longitude).Min();
+            var maxLong = Trip.Stops.Select(x => x.Location.Longitude).Max();
+
+            await FitBounds(minLat, minLong, maxLat, maxLong);
+        }
+    }
+
+    private async Task FitBounds(double minLat, double minLong, double maxLat, double maxLong)
+    {
+        if (module is not null)
+        {
+            try
+            {
+                await module.InvokeVoidAsync("fitBounds", minLat, minLong, maxLat, maxLong);
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error fitting bounds: {ex.Message}");
+            }
+        }
+    }
+
+    private async Task ClearMap()
+    {
+        if (module is not null)
+        {
+            try
+            {
+                await module.InvokeVoidAsync("clearWaypointsAndRoute");
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error clearing map: {ex.Message}");
+            }
+        }
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        if (dotNetObjectReference != null)
+        {
+            dotNetObjectReference.Dispose(); // Important to prevent memory leaks
+        }
+        if (module is not null)
+        {
+            await module.DisposeAsync();
+        }
+    }
 }

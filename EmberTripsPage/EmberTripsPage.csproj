@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorGoogleMaps" Version="4.11.1" />
-    <PackageReference Include="BootstrapBlazor" Version="9.5.12" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
