@@ -29,6 +29,9 @@
                 dotNetObjectReference = DotNetObjectReference.Create(this);
 
                 await module.InvokeVoidAsync("initializeMap", MapId, initialLatitude, initialLongitude, initialZoom, dotNetObjectReference);
+
+                await DrawCurrentRoute();
+                StateHasChanged();
             }
             catch (JSException ex)
             {
@@ -43,21 +46,6 @@
         StateHasChanged();
     }
 
-    private async Task AddWaypointToMap(double lat, double lng, string popupText)
-    {
-        if (module is not null)
-        {
-            try
-            {
-                await module.InvokeVoidAsync("addMarker", lat, lng, popupText);
-            }
-            catch (JSException ex)
-            {
-                Console.WriteLine($"Error adding marker: {ex.Message}");
-            }
-        }
-    }
-
     private async Task DrawCurrentRoute()
     {
         if (Trip != null && Trip.Stops != null)
@@ -67,8 +55,9 @@
                 var lat = stop.Location.Latitude;
                 var lng = stop.Location.Longitude;
                 var popupText = stop.Location.Name;
+                var stopType = Trip.GetStopType(stop);
 
-                await AddWaypointToMap(lat, lng, popupText);
+                await AddWaypointToMap(lat, lng, popupText, stopType.ToString().ToLower());
             }
 
             var minLat = Trip.Stops.Select(x => x.Location.Latitude).Min();
@@ -77,6 +66,21 @@
             var maxLong = Trip.Stops.Select(x => x.Location.Longitude).Max();
 
             await FitBounds(minLat, minLong, maxLat, maxLong);
+        }
+    }
+
+    private async Task AddWaypointToMap(double lat, double lng, string popupText, string stopClass)
+    {
+        if (module is not null)
+        {
+            try
+            {
+                await module.InvokeVoidAsync("addMarker", lat, lng, popupText, stopClass);
+            }
+            catch (JSException ex)
+            {
+                Console.WriteLine($"Error adding marker: {ex.Message}");
+            }
         }
     }
 

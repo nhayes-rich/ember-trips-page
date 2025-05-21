@@ -15,11 +15,24 @@ export function initializeMap(mapId, initialLat, initialLng, initialZoom, dotNet
     }).addTo(map);
 }
 
-export function addMarker(lat, lng, popupText) {
-    const marker = L.marker([lat, lng]).addTo(map);
-    if (popupText) {
-        marker.bindPopup(popupText).openPopup();
+export function addMarker(lat, lng, popupText, stopClass) {
+    var htmlIcon = L.divIcon({
+        html: `<div class="map-marker-icon stage-${stopClass}"></div>`,
+        className: '',
+        iconSize: [10, 10]
+    });
+
+    var zOffset = 0;
+    if (stopClass !== "intermediate") {
+        zOffset = 1000;
     }
+
+    const marker = L.marker([lat, lng], { icon: htmlIcon, zIndexOffset: zOffset }).addTo(map);
+
+    if (popupText) {
+        marker.bindPopup(popupText);
+    }
+
     markers.push(marker);
 }
 
@@ -40,7 +53,7 @@ export function fitBounds(minLat, minLong, maxLat, maxLong) {
         );
 
         map.fitBounds(bounds, {
-            padding: [50, 50],
+            padding: [20, 20],
             maxZoom: 10,
             animate: true
         });

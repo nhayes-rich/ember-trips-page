@@ -2,8 +2,10 @@
     --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --page-background-color: lightgray;
     /* Marker Sizes */
+    --marker-icon-size-tiny: 8px;
     --marker-icon-size-small: 14px;
     --marker-icon-size-large: 20px;
+    --marker-border-width-tiny: 1px;
     --marker-border-width: 2px;
     --inner-dot-ratio: 3;
     --stem-width: 2px;
@@ -258,10 +260,67 @@ html, body {
 /* Map Component */
 
 .map-component {
-    background-color: blue;
+    background-color: #ffffff;
     grid-row: 2 / 4;
     grid-column: 2 / 2;
 }
+
+.map-marker-icon {
+    width: var(--marker-icon-size-tiny);
+    height: var(--marker-icon-size-tiny);
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+    background-color: var(--color-intermediate-fill);
+    border: var(--marker-border-width-tiny) solid var(--color-intermediate-border);
+}
+
+.map-marker-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.map-marker-icon.stage-start {
+    border: var(--marker-border-width) solid var(--color-start-border);
+    width: var(--marker-icon-size-small);
+    height: var(--marker-icon-size-small);
+}
+
+.map-marker-icon.stage-start::before {
+    background-color: var(--color-start-dot);
+    width: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+    height: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+}
+
+.map-marker-icon.stage-active {
+    width: var(--marker-icon-size-small);
+    height: var(--marker-icon-size-small);
+    border: var(--marker-border-width) solid var(--color-active-border);
+}
+
+.map-marker-icon.stage-active::before {
+    background-color: var(--color-active-dot);
+    width: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+    height: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+}
+
+.map-marker-icon.stage-end { 
+    border: var(--marker-border-width) solid var(--color-end-border);
+    width: var(--marker-icon-size-small);
+    height: var(--marker-icon-size-small);
+}
+
+.map-marker-icon.stage-end::before {
+    background-color: var(--color-end-dot);
+    width: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+    height: calc(var(--marker-icon-size-small) / var(--inner-dot-ratio));
+} 
 
 /* Skeleton components */
 

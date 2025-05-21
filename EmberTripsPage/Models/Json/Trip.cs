@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EmberTripsPage.Components.Pages;
+using Newtonsoft.Json;
 
 namespace EmberTripsPage.Models.Json
 {
@@ -227,6 +228,26 @@ namespace EmberTripsPage.Models.Json
         public string GetDestinationRegion()
         {
             return GetDestination().Location.RegionName;
+        }
+
+        public StopType GetStopType(RouteStop stop)
+        {
+            StopType stopType = StopType.INTERMEDIATE;
+            
+            if (stop.Equals(Stops.First()))
+            {
+                stopType = StopType.START;
+            }
+            else if (stop.Equals(Stops.Last()))
+            {
+                stopType = StopType.END;
+            }
+            else if (stop.Equals(GetCurrentStop()))
+            {
+                stopType = StopType.ACTIVE;
+            }
+
+            return stopType;
         }
     }
 }

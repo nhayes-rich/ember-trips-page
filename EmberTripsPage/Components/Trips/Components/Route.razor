@@ -16,19 +16,9 @@
 
                 foreach (var stop in Trip.Stops)
                 {
-                    StopType stopType = StopType.INTERMEDIATE;
-                    if (stop.Equals(Trip.Stops.First()))
+                    var stopType = Trip.GetStopType(stop);
+                    if (stopType != StopType.INTERMEDIATE)
                     {
-                        stopType = StopType.START;
-                        collapsedIntermediate = false;
-                    }
-                    else if (stop.Equals(Trip.Stops.Last()))
-                    {
-                        stopType = StopType.END;
-                    }
-                    else if (stop.Equals(Trip.GetCurrentStop()))
-                    {
-                        stopType = StopType.ACTIVE;
                         collapsedIntermediate = false;
                     }
                     else if (CollapseIntermediate)
