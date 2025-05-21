@@ -7,28 +7,6 @@ namespace EmberTripsPage.Models.Json
         [JsonProperty("route")]
         public List<RouteStop> Stops { get; set; } = new();
 
-        [JsonProperty("vehicle")]
-        public Vehicle Vehicle { get; set; } = new();
-
-        [JsonProperty("description")]
-        public Description Description { get; set; } = new();
-
-        public string GetRouteNumber()
-        {
-            return Description.RouteNumber;
-        }
-
-        public string GetFormattedRouteName()
-        {
-            var firstName = GetOrigin().Location.Name;
-            var firstRegion = GetOrigin().Location.RegionName;
-
-            var lastName = GetDestination().Location.Name;
-            var lastRegion = GetDestination().Location.RegionName;
-
-            return $"{firstName} [{firstRegion}] to {lastName} [{lastRegion}]";
-        }
-
         public RouteStop GetOrigin()
         {
             return Stops.First();
@@ -62,11 +40,6 @@ namespace EmberTripsPage.Models.Json
         public DateTime GetStartTimeUTC()
         {
             return GetOrigin().Departure.Scheduled.ToUniversalTime();
-        }
-
-        public DateTime GetEndTimeUTC()
-        {
-            return GetDestination().Departure.Scheduled.ToUniversalTime();
         }
 
         public string GetFormattedStartLocal()
