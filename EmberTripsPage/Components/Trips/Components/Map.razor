@@ -51,7 +51,7 @@
             {
                 var lat = stop.Location.Latitude;
                 var lng = stop.Location.Longitude;
-                var popupText = stop.Location.Name;
+                var popupText = stop.Location.Name + "<br> ETA: " + stop.GetFormattedDepartureEta(Trip.GetStartTimeUTC());
                 var stopType = Trip.GetStopType(stop);
 
                 await AddWaypointToMap(lat, lng, popupText, stopType.ToString().ToLower());
