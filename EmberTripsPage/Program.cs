@@ -26,10 +26,13 @@ app.UseRouting();
 
 app.UseAntiforgery();
 
-app.UseEndpoints(endpoints =>
+if (app.Environment.IsDevelopment())
 {
-    endpoints.MapControllers();
-});
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers();
+    });
+}
 
 app.UseHttpsRedirection();
 
