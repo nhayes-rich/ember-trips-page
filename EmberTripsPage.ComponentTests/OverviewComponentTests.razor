@@ -1,0 +1,86 @@
+﻿@using EmberTripsPage.Components.Trips.Components
+@using EmberTripsPage.Models
+@using EmberTripsPage.Models.Interfaces
+@using EmberTripsPage.Components.Trips.Skeletons
+
+@inherits TestContext
+@code {
+    [Fact]
+    public void RendersSkeletonOverview_WhenTripIsNull()
+    {
+        // Act
+        var cut = RenderComponent<Overview>(parameters => parameters
+            .Add(p => p.Trip, null)
+        );
+
+        // Assert
+        cut.MarkupMatches(@<text>
+            <SkeletonOverview></SkeletonOverview>
+            </text>);
+    }
+
+    [Fact]
+    public void RendersTripDetails_WhenTripIsProvided()
+    {
+        // Arrange
+        var trip = new TripMock();
+
+        // Act
+        var cut = RenderComponent<Overview>(parameters => parameters
+            .Add(p => p.Trip, trip)
+        );
+
+        // Assert
+        cut.Find(".route-from").MarkupMatches($"<div class=\"route-from\">{trip.GetFormattedStartLocal()} from</div>");
+        cut.Find(".route-start .route-region").MarkupMatches($"<div class=\"route-region\">{trip.GetOriginRegion()}</div>");
+        cut.Find(".route-start .route-name").MarkupMatches($"<div class=\"route-name\">{trip.GetOriginName()}</div>");
+        cut.Find(".route-to").MarkupMatches($"<div class=\"route-to\">{trip.GetFormattedEndLocal()} to</div>");
+        cut.Find(".route-end .route-region").MarkupMatches($"<div class=\"route-region\">{trip.GetDestinationRegion()}</div>");
+        cut.Find(".route-end .route-name").MarkupMatches($"<div class=\"route-name\">{trip.GetDestinationName()}</div>");
+    }
+
+    private class TripMock : ITrip
+    {
+        public string GetFormattedStartLocal() => "10:00";
+        public string GetOriginRegion() => "North Zone";
+        public string GetOriginName() => "Station A";
+        public string GetFormattedEndLocal() => "11:00";
+        public string GetDestinationRegion() => "South Zone";
+        public string GetDestinationName() => "Station B";
+
+        public IEnumerable<IStop> GetStops()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IStop GetOrigin()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetCurrentStopIndex()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IStop GetCurrentStop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IStop GetDestination()
+        {
+            throw new NotImplementedException();
+        }
+
+        public DateTime GetStartTimeUTC()
+        {
+            throw new NotImplementedException();
+        }
+
+        public StopType GetStopType(IStop stop)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

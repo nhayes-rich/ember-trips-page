@@ -1,0 +1,312 @@
+﻿@using EmberTripsPage.Components.Trips.Components
+@using EmberTripsPage.Models
+@using EmberTripsPage.Models.Interfaces
+@using EmberTripsPage.Components.Trips.Skeletons
+@using EmberTripsPage.Models.Json
+
+@inherits TestContext
+@code {
+    [Fact]
+    public void RendersSkeletonOverview_WhenTripIsNull()
+    {
+        // Act
+        var cut = RenderComponent<Route>(parameters => parameters
+            .Add(p => p.Trip, null)
+        );
+
+        // Assert
+        cut.MarkupMatches(@<text>
+        <SkeletonRoute></SkeletonRoute>
+    </text>
+    );
+    }
+
+    [Fact]
+    public void RendersRouteBreakdown_WhenTripIsProvided_NoIntermediateStops()
+    {
+        // Arrange
+        List<StopMock> stopMocks = new() {
+            new("stop 1", "region 1", "time 1"),
+            new("stop 2", "region 2", "time 2"),
+            new("stop 3", "region 3", "time 3"),
+        };
+
+        TripMock tripMock = new(stopMocks);
+
+        // Act
+        var cut = RenderComponent<Route>(parameters => parameters
+            .Add(p => p.Trip, tripMock)
+        );
+
+        // Assert
+        Assert.Single(cut.FindAll(".stop-item.start"));
+        Assert.Single(cut.FindAll(".stop-item.active"));
+        Assert.Single(cut.FindAll(".stop-item.end"));
+        Assert.Empty(cut.FindAll(".toggle-button"));
+    }
+
+    [Fact]
+    public void RendersRouteBreakdown_WhenTripIsProvided_Collapsed()
+    {
+        // Arrange
+        List<StopMock> stopMocks = new() { 
+            new("stop 1", "region 1", "time 1"), 
+            new("stop 2", "region 2", "time 2"),
+            new("stop 3", "region 3", "time 3"),
+            new("stop 4", "region 4", "time 4"),
+            new("stop 5", "region 5", "time 5"),
+        };
+
+        TripMock tripMock = new(stopMocks);
+
+        // Act
+        var cut = RenderComponent<Route>(parameters => parameters
+            .Add(p => p.Trip, tripMock)
+        );
+
+        // Assert
+        var collapsedIntermediates = cut.FindAll(".stop-item.intermediate");
+        Assert.Equal(2, collapsedIntermediates.Count());
+
+        var toggleButton = cut.Find(".toggle-button");
+        cut.FindAll(".stop-item.intermediate .stop-details").Contains(toggleButton);
+        Assert.Equal("Show intermediate stops", toggleButton.TextContent);
+
+        Assert.Single(cut.FindAll(".stop-item.start"));
+        Assert.Single(cut.FindAll(".stop-item.active"));
+        Assert.Single(cut.FindAll(".stop-item.end"));
+    }
+
+    [Fact]
+    public void RendersRouteBreakdown_WhenTripIsProvided_Expanded()
+    {
+        // Arrange
+        List<StopMock> stopMocks = new() {
+            new("stop 1", "region 1", "time 1"),
+            new("stop 2", "region 2", "time 2"),
+            new("stop 3", "region 3", "time 3"),
+            new("stop 4", "region 4", "time 4"),
+            new("stop 5", "region 5", "time 5"),
+        };
+
+        TripMock tripMock = new(stopMocks);
+
+        // Act
+        var cut = RenderComponent<Route>(parameters => parameters
+            .Add(p => p.Trip, tripMock)
+        );
+
+        cut.Find(".toggle-button").Click();
+
+        // Assert
+        var expandedIntermediates = cut.FindAll(".stop-item.intermediate");
+        Assert.Equal(2, expandedIntermediates.Count());
+
+        var toggleButton = cut.Find(".toggle-button");
+        cut.Find(".route-component").Contains(toggleButton);
+        Assert.Equal("(hide)", toggleButton.TextContent);
+
+        Assert.Single(cut.FindAll(".stop-item.start"));
+        Assert.Single(cut.FindAll(".stop-item.active"));
+        Assert.Single(cut.FindAll(".stop-item.end"));
+
+        cut.Find(".stop-item.start").MarkupMatches(
+            @<text>
+                <li class="stop-item start">
+                    <div class="marker-assembly">
+                        <div class="marker-icon"></div>
+                        <div class="marker-stem"></div>
+                    </div>
+                    <div class="stop-details">
+                        <span class="stop-name">stop 1</span>
+                        <span class="stop-eta">time 1</span>
+                    </div>
+                </li>
+            </text>);
+
+        cut.FindAll(".stop-item.intermediate")[0].MarkupMatches(
+            @<text>
+                <li class="stop-item intermediate">
+                    <div class="marker-assembly">
+                        <div class="marker-icon"></div>
+                        <div class="marker-stem"></div>
+                    </div>
+                    <div class="stop-details">
+                        <span class="stop-name">stop 2</span>
+                        <span class="stop-eta">time 2</span>
+                    </div>
+                </li>
+            </text>);
+
+        cut.FindAll(".stop-item.intermediate")[1].MarkupMatches(
+            @<text>
+                <li class="stop-item intermediate">
+                    <div class="marker-assembly">
+                        <div class="marker-icon"></div>
+                        <div class="marker-stem"></div>
+                    </div>
+                    <div class="stop-details">
+                        <span class="stop-name">stop 4</span>
+                        <span class="stop-eta">time 4</span>
+                    </div>
+                </li>
+            </text>);
+
+        cut.Find(".stop-item.active").MarkupMatches(
+            @<text>
+                <li class="stop-item active">
+                    <div class="marker-assembly">
+                        <div class="marker-icon"></div>
+                        <div class="marker-stem"></div>
+                    </div>
+                    <div class="stop-details">
+                        <span class="stop-name">stop 3</span>
+                        <span class="stop-eta">time 3</span>
+                    </div>
+                </li>
+            </text>);
+
+        cut.Find(".stop-item.end").MarkupMatches(
+            @<text>
+                <li class="stop-item end">
+                    <div class="marker-assembly">
+                        <div class="marker-icon"></div>
+                        <div class="marker-stem"></div>
+                    </div>
+                    <div class="stop-details">
+                        <span class="stop-name">stop 5</span>
+                        <span class="stop-eta">time 5</span>
+                    </div>
+                </li>
+            </text>);
+    }
+
+    private class StopMock : IStop
+    {
+        private string _name;
+        private string _regionName;
+        private string _formattedDepartureEta;
+
+        public StopMock(string name, string regionName, string formattedDepartureEta)
+        {
+            _name = name;
+            _regionName = regionName;
+            _formattedDepartureEta = formattedDepartureEta;
+        }
+
+        public string GetName()
+        {
+            return _name;
+        }
+
+        public string GetRegionName()
+        {
+            return _regionName;
+        }
+
+        public string GetFormattedDepartureEta(DateTime? routeStartTimeUtc = null)
+        {
+            return _formattedDepartureEta;
+        }
+
+        public ScheduledTime GetDeparture()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Location GetLocation()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    private class TripMock : ITrip
+    {
+        private IEnumerable<IStop> _stops;
+
+        public TripMock(IEnumerable<IStop> stops)
+        {
+            _stops = stops.ToList();
+        }
+
+        public IEnumerable<IStop> GetStops()
+        {
+            return _stops;
+        }
+
+        public StopType GetStopType(IStop stop)
+        {
+            StopType stopType = StopType.INTERMEDIATE;
+
+            if (stop.Equals(_stops.First()))
+            {
+                stopType = StopType.START;
+            }
+            else if (stop.Equals(_stops.Last()))
+            {
+                stopType = StopType.END;
+            }
+            else if (stop.Equals(GetCurrentStop()))
+            {
+                stopType = StopType.ACTIVE;
+            }
+
+            return stopType;
+        }
+
+        public DateTime GetStartTimeUTC()
+        {
+            return DateTime.UtcNow;
+        }
+
+        public IStop GetCurrentStop()
+        {
+            return _stops.ElementAt(_stops.Count() / 2);
+        }
+
+        public int GetCurrentStopIndex()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IStop GetDestination()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetDestinationName()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetDestinationRegion()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetFormattedEndLocal()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetFormattedStartLocal()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IStop GetOrigin()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetOriginName()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetOriginRegion()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

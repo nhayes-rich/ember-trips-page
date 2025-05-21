@@ -5,6 +5,14 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmberTripsPage", "EmberTripsPage\EmberTripsPage.csproj", "{7E2E2779-73B6-40E5-A792-FE164B188619}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmberTripsPage.ComponentTests", "EmberTripsPage.ComponentTests\EmberTripsPage.ComponentTests.csproj", "{652B3894-2678-4C41-B4C9-7E721199D37A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4478CA35-66F7-46D5-8F81-EA96955C5A60}"
+	ProjectSection(SolutionItems) = preProject
+		page.png = page.png
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,10 @@ Global
 		{7E2E2779-73B6-40E5-A792-FE164B188619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E2E2779-73B6-40E5-A792-FE164B188619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E2E2779-73B6-40E5-A792-FE164B188619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652B3894-2678-4C41-B4C9-7E721199D37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652B3894-2678-4C41-B4C9-7E721199D37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652B3894-2678-4C41-B4C9-7E721199D37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652B3894-2678-4C41-B4C9-7E721199D37A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
