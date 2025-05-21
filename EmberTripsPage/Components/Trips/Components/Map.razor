@@ -1,4 +1,4 @@
-﻿@using EmberTripsPage.Models.Json
+﻿@using EmberTripsPage.Models.Interfaces
 @inject IJSRuntime JSRuntime
 @implements IAsyncDisposable
 
@@ -7,7 +7,7 @@
 
 @code {
     [Parameter]
-    public TripResult? Trip { get; set; }
+    public ITrip? Trip { get; set; }
 
     private IJSObjectReference? module;
     private DotNetObjectReference<Map>? dotNetObjectReference;
@@ -45,13 +45,15 @@
 
     private async Task DrawCurrentRoute()
     {
-        if (Trip != null && Trip.Stops != null)
+        if (Trip != null && Trip.GetStops() != null)
         {
-            foreach (var stop in Trip.Stops)
+            var stops = Trip.GetStops();
+
+            foreach (var stop in stops)
             {
-                var lat = stop.Location.Latitude;
-                var lng = stop.Location.Longitude;
-                var popupText = stop.Location.Name + "<br> ETA: " + stop.GetFormattedDepartureEta(Trip.GetStartTimeUTC());
+                var lat = stop.GetLocation().Latitude;
+                var lng = stop.GetLocation().Longitude;
+                var popupText = stop.GetLocation().Name + "<br> ETA: " + stop.GetFormattedDepartureEta(Trip.GetStartTimeUTC());
                 var stopType = Trip.GetStopType(stop);
 
                 await AddWaypointToMap(lat, lng, popupText, stopType.ToString().ToLower());
@@ -59,10 +61,10 @@
 
             await AddRoute();
 
-            var minLat = Trip.Stops.Select(x => x.Location.Latitude).Min();
-            var maxLat = Trip.Stops.Select(x => x.Location.Latitude).Max();
-            var minLong = Trip.Stops.Select(x => x.Location.Longitude).Min();
-            var maxLong = Trip.Stops.Select(x => x.Location.Longitude).Max();
+            var minLat = stops.Select(x => x.GetLocation().Latitude).Min();
+            var maxLat = stops.Select(x => x.GetLocation().Latitude).Max();
+            var minLong = stops.Select(x => x.GetLocation().Longitude).Min();
+            var maxLong = stops.Select(x => x.GetLocation().Longitude).Max();
 
             await FitBounds(minLat, minLong, maxLat, maxLong);
         }

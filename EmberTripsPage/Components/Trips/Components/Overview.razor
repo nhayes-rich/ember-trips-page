@@ -1,5 +1,5 @@
 ﻿@using EmberTripsPage.Components.Trips.Skeletons
-@using EmberTripsPage.Models.Json
+@using EmberTripsPage.Models.Interfaces
 
 @if (Trip != null)
 {
@@ -25,5 +25,5 @@ else
 
 @code {
     [Parameter]
-    public TripResult? Trip { get; set; }
+    public ITrip? Trip { get; set; }
 }

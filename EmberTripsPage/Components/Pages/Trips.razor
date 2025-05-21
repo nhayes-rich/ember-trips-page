@@ -11,6 +11,8 @@
 @using EmberTripsPage.Config
 @using EmberTripsPage.Models
 @using EmberTripsPage.Models.Json
+@using EmberTripsPage.Models.Interfaces
+@using EmberTripsPage.Models.Classes
 
 <PageTitle>Ember - Trip Viewer</PageTitle>
 
@@ -22,7 +24,7 @@
 </div>
 
 @code {
-    private TripResult? trip;
+    private ITrip? trip;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -31,7 +33,7 @@
             var tripResult = await GetFirstRouteAsync();
             if (tripResult != null)
             {
-                trip = tripResult;
+                trip = new Trip(tripResult);
                 StateHasChanged();
             }
         }
