@@ -68,7 +68,7 @@ namespace EmberTripsPage.Models.Json
 
             if (routeStartTimeUtc != null)
             {
-                int daysAfter = (int)Math.Floor((Departure.Scheduled.ToUniversalTime().Date - routeStartTimeUtc.Value.Date).TotalDays);
+                int daysAfter = (int)Math.Floor((Departure.Scheduled.ToLocalTime().Date - routeStartTimeUtc.Value.ToLocalTime().Date).TotalDays);
                 
                 if (daysAfter > 0)
                 {
