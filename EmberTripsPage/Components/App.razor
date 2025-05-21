@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Reflection
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.css?v=@Version" />
     <link rel="stylesheet" href="EmberTripsPage.styles.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     
@@ -30,3 +31,21 @@
 </body>
 
 </html>
+
+@code {
+    private static long? version;
+    public static long Version
+    {
+        get
+        {
+            version ??= GetAssemblyFileDate();
+            return (long)version;
+        }
+    }
+    private static long GetAssemblyFileDate()
+    {
+        Assembly assembly = Assembly.GetExecutingAssembly();
+        FileInfo fi = new(assembly.Location);
+        return fi.LastWriteTime.Ticks;
+    }
+}
