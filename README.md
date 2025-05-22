@@ -12,6 +12,10 @@ Two project configurations were created: a `Development` configuration, which po
 
 ## Component Tests
 
+This project contains a few tests for the `Route` and `Overview` components. These test basic functionality and assert that the markup matches the expected result in select scenarios. Given more time, I would expands these tests to include additional edge cases for component rendering. Additionally, I would add tests for the remaining components (`Map`, `Header`, and the entire `Trips` page). 
+
+Outside of component tests, I want to add tests for the data models, asserting that certain pre- and post-processing is occurring, data validation is handled properly, and that results injected into markup are formatted correctly (specifically, times and names).
+
 ## Future Goals
 
 ### Dynamic start/current/end locations
