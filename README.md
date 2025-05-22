@@ -10,6 +10,10 @@ Two project configurations were created: a `Development` configuration, which po
 
 ![image](page.png)
 
+The project can be run from the `EmberTripsPage` directory, with `dotnet run`.
+
+Tests can be run from the root directory, with `dotnet test`.
+
 ## Component Tests
 
 This project contains a few tests for the `Route` and `Overview` components. These test basic functionality and assert that the markup matches the expected result in select scenarios. Given more time, I would expands these tests to include additional edge cases for component rendering. Additionally, I would add tests for the remaining components (`Map`, `Header`, and the entire `Trips` page). 
